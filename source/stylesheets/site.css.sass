@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css?family=Questrial')
 @import url('https://fonts.googleapis.com/css?family=Oswald')
 
+#navbar
+    color: white
+
 *
     box-sizing: border-box
     font-family: Questrial
@@ -15,8 +18,24 @@ body
     height: 10rem
     width: 40rem
     margin: auto
+    margin-top: 30vh
     overflow: hidden
     position: relative
+
+.box
+    align-items: center
+    display: flex
+    justify-content: center
+
+hr
+    animation: display .1s
+    animation-delay: .5s
+    animation-fill-mode: both
+    background-color: white
+    border: none
+    height: 1px
+    margin-right: 20px
+    width: 50px
 
 .top
     height: 20rem
@@ -36,16 +55,18 @@ body
     animation-delay: .5s
     animation-fill-mode: both
     color: white
+    font-family: Oswald
     font-size: 50px
     text-align: center
+    text-transform: uppercase
 
 #about
     animation: display .1s
     animation-delay: .5s
     animation-fill-mode: both
     color: white
-    font-size: 14px
-    letter-spacing: 5px
+    font-size: 15px
+    letter-spacing: 6px
 
 @keyframes width
     0%
