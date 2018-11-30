@@ -1,9 +1,10 @@
-describe 'Page' do
+require 'spec_helper'
 
-    it 'Displays a header' do
+describe page, :type => :feature do
+
+    it 'displays a header' do
         visit '/'
         expect(page).to have_content 'portfolio'
     end
 
 end
-
