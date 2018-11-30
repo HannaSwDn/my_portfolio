@@ -1,4 +1,69 @@
+// fonts
+@import url('https://fonts.googleapis.com/css?family=Questrial')
+@import url('https://fonts.googleapis.com/css?family=Oswald')
+
 *
     box-sizing: border-box
+    font-family: Questrial
     margin: 0
     padding: 0
+
+body
+    background-color: black
+
+.wrapper
+    height: 10rem
+    width: 40rem
+    margin: auto
+    overflow: hidden
+    position: relative
+
+.top
+    height: 20rem
+    width: auto
+
+.top
+    animation: width 1s
+    animation-fill-mode: both
+    background-color: white
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+
+#name
+    animation: display .1s
+    animation-delay: .5s
+    animation-fill-mode: both
+    color: white
+    font-size: 50px
+    text-align: center
+
+#about
+    animation: display .1s
+    animation-delay: .5s
+    animation-fill-mode: both
+    color: white
+    font-size: 14px
+    letter-spacing: 5px
+
+@keyframes width
+    0%
+        width: 0px
+
+    70%
+        width: 100%
+        margin-left: 0%
+
+    100%
+        width: 0%
+        margin-left: 100%
+
+
+@keyframes display
+    0%
+        color: black
+
+
+    100%
+        color: white
