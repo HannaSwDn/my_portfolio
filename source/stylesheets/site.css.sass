@@ -7,6 +7,7 @@
     box-sizing: border-box
     font-family: Questrial
     margin: 0
+    overflow-x: hidden
     padding: 0
 
 // scrollbar styling
@@ -22,13 +23,13 @@ body::-webkit-scrollbar-thumb
 
 // navbar styling
 nav
-    background-color: #F5F5F5
-    height: 100vh
+    background-color: white
+    border-bottom: 1px solid black
+    height: 5rem
     right: 0
     position: absolute
     top: 0
-    width: 20vw
-    max-width: 15rem
+    width: 100vw
 
 #ul
     display: none
@@ -49,17 +50,15 @@ nav
 
 
 
-
-
-
-
 .wrapper
-    border: 1px solid darkgrey
-    height: 10rem
-    width: 40rem
-    margin-left: 17.5vw
+    animation: border .1s .5s
+    animation-fill-mode: both
+    height: auto
+    width: 60vw
+    margin: auto
     margin-top: 40vh
     overflow: hidden
+    padding: 20px 10px 20px 10px
     position: relative
 
 .box
@@ -77,13 +76,13 @@ hr
     width: 50px
 
 .top
-    height: 20rem
+    height: 100%
     width: auto
 
 .top
     animation: width 1s
     animation-fill-mode: both
-    background: linear-gradient(to right, #E8E8E8, #F5F5F5)
+    background: black
     position: absolute
     top: 0
     left: 0
@@ -95,8 +94,7 @@ hr
     animation-fill-mode: both
     color: white
     font-family: Oswald
-    font-size: 50px
-    padding-top: 1.6rem
+    font-size: 25px
     text-align: center
     text-transform: uppercase
 
@@ -105,16 +103,29 @@ hr
     animation-delay: .5s
     animation-fill-mode: both
     color: white
-    font-size: 15px
+    font-size: 14px
     letter-spacing: 6px
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // keyframes animations
 
 @keyframes width
     0%
-        width: 0px
+        width: 0%
 
-    60%
+    50%
         width: 100%
         margin-left: 0%
 
@@ -127,11 +138,18 @@ hr
         color: white
 
     100%
-        color: darkgrey
+        color: black
 
 @keyframes hr
     0%
         background-color: white
 
     100%
-        background-color: darkgrey
+        background-color: black
+
+@keyframes border
+    0%
+        border: 1px solid transparent
+    
+    100%
+        border: 1px solid black
